@@ -1,0 +1,24 @@
+<header class="header">
+    <div class="navbar-left">
+        <div class="avatar">
+            <a href="<%- url_for() %>">
+                <img src="<%= config.url %>/<%= config.avatar%>"alt="avatar">
+            </a>
+        </div>
+        <div class="nav-title">
+            <a class="nav-brand" href="<%- url_for() %>"><%= config.author %></a>
+        </div>
+    </div>
+    <div class="navbar-right">
+        <ul class="nav-links">
+            <% for (name in theme.menu) { %>
+                <div class="nav-link">
+                    <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link">
+                        <%= name %>
+                    </a>
+                </div>
+            <% } %>
+        </ul>
+
+    </div>
+</header>

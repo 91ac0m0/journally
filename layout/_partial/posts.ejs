@@ -1,0 +1,22 @@
+<div class="postslist">
+    <%
+    let posts = site.posts,
+        current = (page.current - 1) * config.index_generator.per_page;
+    posts.data.sort((a, b) => {
+        let x = a.pinned ?? 0,
+            y = b.pinned ?? 0;
+        return x === y ? b.date - a.date : y - x;
+    });
+    posts = posts.slice(current, config.index_generator.per_page + current);
+    %>
+    <% posts.forEach(post => { %>
+    <div class="post">
+        <a class = "post-title-link" href="<%- url_for(post.path) %>">
+            <%= post.title %>
+        </a>
+        <span class="post-title-date">
+            <%= post.date.format('YYYY-MM-DD') %>
+        </span>
+    </div>
+    <% }); %>
+</div>
