@@ -1,0 +1,42 @@
+.hljs-copy-button 
+    transform: translateX(0);
+    color: #fff
+
+.hljs-copy-wrapper:hover .hljs-copy-button,
+.hljs-copy-button:focus {
+    background-image url("../img/copy.svg")
+}
+
+
+.hljs-copy-button[data-copied="true"] {
+   background-color #584e59
+}
+
+.hljs-copy-button[data-copied="false"] {
+   background-image :none
+}
+
+/* 滚动条的整体样式 */
+pre.hljs-copy-wrapper::-webkit-scrollbar {
+    height: 13px;
+}
+
+/* 滚动条轨道样式 */
+pre.hljs-copy-wrapper::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* 轨道背景颜色 */
+}
+
+/* 滚动条滑块样式 */
+pre.hljs-copy-wrapper::-webkit-scrollbar-thumb {
+    background-color: #b3b1b1;
+    /* 滑块颜色 */
+    border-radius: 4px;
+    /* 滑块圆角 */
+}
+
+/* 鼠标悬停在滚动条上时的样式 */
+pre.hljs-copy-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #a2a0a0;
+    /* 悬停时的滑块颜色 */
+}
