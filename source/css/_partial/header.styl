@@ -4,6 +4,13 @@
     margin-top: 0
     height: 50px
     font-size: 1.5rem
+    position: fixed; /* 固定在屏幕顶部 */
+    background-color #fff
+    top: 0; /* 与页面顶部对齐 */
+    left: 0; /* 与页面左边对齐 */
+    width: 100%; /* 宽度占满整个屏幕 */
+    padding: 10px; /* 导航栏的内边距 */
+    z-index: 1000; /* 设置一个高的 z-index 值确保在其他元素上面 */
 
     .navbar-right
         line-height: 2.4em
@@ -28,7 +35,6 @@
     .navbar-left
         padding: 0
         line-height: 50px
-        margin-left: 40px
         width: 40%
         display: inline
         .avatar
@@ -52,6 +58,7 @@
             font-weight: bold
             margin-bottom: 20px
             font-family: math
+            margin-left: -120px
             a
                 color:  color-font  
                 &:hover

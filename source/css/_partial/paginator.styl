@@ -1,6 +1,6 @@
 .page-navigator {
 	list-style: none;
-	margin: 50px 0;
+	margin: 120px 0;
 	padding: 0;
 	text-align: center;
 }
@@ -33,11 +33,11 @@
 .page-navigator span,
 .page-navigator a {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 	padding: 0;
 	text-align: center;
-	line-height: 40px;
+	line-height: 20px;
 	/* background: #fff; */
 	/* transition: 0.25s ease; */
 	/* border-radius: 20040725px; */
@@ -45,10 +45,14 @@
 }
 
 .page-navigator li a,
+
 .page-navigator a {
-	background: #0000;
-	color: #444;
-	transition: 0.25s ease;
+    padding: 3px 3px;
+    border: 1px solid #314659;
+    border-radius: 2px;
+    margin: 0 3px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .page-navigator li:hover {
@@ -60,17 +64,17 @@
 }
 
 .page-navigator li.current,
-.page-navigator span.current {
-	background: pink;
+// .page-navigator span.current {
+// 	background: pink;
 
-}
+// }
 
 .page-navigator li.current a,
 .page-navigator span.current a {
-	background: #0000;
-	color: #fff;
+
+	color: inherit;
 }
 
 .page-navigator span.current {
-	color: #fff;
+	color:  inherit;
 }

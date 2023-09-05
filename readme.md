@@ -24,7 +24,7 @@
 
 ### 组件
 
-
+[paginator](https://www.cnblogs.com/linfangnan/?page=2)
 
 
 
@@ -33,10 +33,11 @@
 ### todos
 
 - [x] markdown 渲染
-- [x] toc
-- [ ] 代码点击复制
-- [ ] 分页跳转的样式
+- [ ] toc 滚动，navbar 固定
+- [ ] 代码点击复制，高亮渲染主题
+- [x] 分页跳转的样式
 - [x] 主页也太丑了
+- [ ] 
 
 
 
