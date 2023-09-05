@@ -15,7 +15,11 @@
     <script>hljs.highlightAll();</script>
     <script>hljs.addPlugin(new CopyButtonPlugin());</script>
 
+
     <%- css('css/style.css') %>
+    <%- js('js/jquery-3.7.1.min.js') %>
+    <%- js('js/bootstrap-transition.js') %>
+    <%- js('js/zoom.js') %>
 
     <style>
         .markdown-body {
@@ -39,5 +43,6 @@
 <body>
     <%- include('_partial/header.ejs') %>
     <%- body %>
+
 </body>
 </html>
