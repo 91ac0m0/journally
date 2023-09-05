@@ -76,3 +76,4 @@ pagination_dir: page
 - [ ] firefox头像很歪
 - [ ] 代码块滚轮条鬼畜
 - [ ] 代码块复制按钮看不清
+- [ ] archieve
