@@ -3,6 +3,11 @@ menu:
   archives: /archives
   about: /about
 
+
+# avator
+avatar: img/avatar.jpg
+
+# sidebar
 toc:
   maxdepth: 3
   class: toc

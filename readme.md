@@ -31,7 +31,6 @@
 
 
 ### todos
-
 - [x] markdown 渲染
 - [ ] toc 滚动，navbar 固定
 - [ ] 代码点击复制，高亮渲染主题
@@ -47,3 +46,31 @@
 [行号无法取消?](https://github.com/hexojs/hexo/issues/2589#issuecomment-398569616)
 
 [去除 inline 元素的空格](https://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/)
+
+
+
+
+### 设置
+
+无效 site config 中的 highlight
+```text
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: false
+  line_number: false
+  tab_replace: ''
+```
+
+分页的数量可以在 site config 中调整
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 8
+pagination_dir: page
+```
