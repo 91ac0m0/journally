@@ -8,7 +8,9 @@
 
 ## 设置
 
-使得 site config 中的 highlight 为无效
+头像放在 your_site/source/img 目录下
+
+设置 your_site/_config.yml 中的 highlight 为无效
 ```text
 highlight:
   enable: false
@@ -24,7 +26,7 @@ prismjs:
   tab_replace: ''
 ```
 
-分页的数量可以在 site config 中调整
+分页的数量可以在 your_site/_config.yml 中调整
 ```
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -74,6 +76,6 @@ pagination_dir: page
 - [x] 主页也太丑了
 - [x] 图片点击放大  
 - [ ] firefox头像很歪
-- [ ] 代码块滚轮条鬼畜
-- [ ] 代码块复制按钮看不清
+- [x] 代码块滚轮条鬼畜
+- [x] 代码块复制按钮看不清
 - [ ] archieve
