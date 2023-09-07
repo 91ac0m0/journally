@@ -4,11 +4,15 @@
 
 ## 预览
 
-
+TODO
 
 ## 设置
 
+###头像
+
 头像放在 your_site/source/img 目录下
+
+###highlight
 
 设置 your_site/_config.yml 中的 highlight 为无效
 ```text
@@ -26,13 +30,32 @@ prismjs:
   tab_replace: ''
 ```
 
+### 分页
+
 分页的数量可以在 your_site/_config.yml 中调整
+
 ```
 # Pagination
 ## Set per_page to 0 to disable pagination
 per_page: 8
 pagination_dir: page
 ```
+
+### 搜索框(Experimental)
+
+由于搜索功能是在前端完成，所以打开主页就会下载写过的所有文件的文本，很不优雅hh）
+
+在your_site文件夹安装[hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
+
+`npm install hexo-generator-search --save`
+
+在your_site/_config.yml中启用
+
+```yaml
+search_box: true
+```
+
+
 
 ## 借(chao)鉴(xi)
 
@@ -49,6 +72,8 @@ pagination_dir: page
 [highlight js](http://highlight.cndoc.wiki/doc) 主题在 css 里面更改
 
 [markdown 渲染](https://github.com/sindresorhus/github-markdown-css) 没有 highlight
+
+[为 Hexo 博客增加一个站内搜索](https://www.barretlee.com/blog/2017/06/04/hexo-search-insite/)
 
 ### 参考主题
 
@@ -79,3 +104,4 @@ pagination_dir: page
 - [x] 代码块滚轮条鬼畜
 - [x] 代码块复制按钮看不清
 - [ ] archieve 
+- [x] searchbox

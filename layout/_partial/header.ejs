@@ -1,4 +1,5 @@
 <header class="header">
+
     <div class="navbar-left">
         <div class="avatar">
             <a href="<%- url_for() %>">
@@ -21,4 +22,17 @@
         </ul>
 
     </div>
+    <% if (config.search_box) { %>
+
+        <% if (is_home()) { %>
+            <%- partial('_partial/search', {wrapStyle: '', inputStyle: ''}) %>
+            <script>
+            $.getScript('/js/search.js', function() {
+                searchFunc("/search.xml", 'local-search-input', 'local-search-result');
+            });
+            </script>
+        <% } %>
+
+    <% } %>
+
 </header>
