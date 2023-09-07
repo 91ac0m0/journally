@@ -8,11 +8,11 @@ TODO
 
 ## 设置
 
-###头像
+### 头像
 
 头像放在 your_site/source/img 目录下
 
-###highlight
+### highlight
 
 设置 your_site/_config.yml 中的 highlight 为无效
 ```text
